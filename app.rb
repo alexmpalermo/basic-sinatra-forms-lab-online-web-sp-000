@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @team.powerfwd = params[:pf]
     @team.center = params[:c]
     @team.save
-    
+    redirect "team"
   end
 
 end
