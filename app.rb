@@ -14,7 +14,7 @@ class App < Sinatra::Base
     @team.smallfwd = params[:sf]
     @team.powerfwd = params[:pf]
     @team.center = params[:c]
-    
+    erb :"team"
   end
 
 end
