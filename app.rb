@@ -13,7 +13,7 @@ class App < Sinatra::Base
     @team.shooting = params[:sg]
     @team.smallfwd = params[:sf]
     @team.powerfwd = params[:pf]
-    @team.center = params[:center]
+    @team.center = params[:c]
     
   end
 
