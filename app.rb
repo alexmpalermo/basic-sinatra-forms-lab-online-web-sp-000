@@ -11,8 +11,8 @@ class App < Sinatra::Base
     @team.coach = params[:coach]
     @team.point = params[:pg]
     @team.shooting = params[:sg]
-    @team.smallfwd = params[:smallfwd]
-    @team.powerfwd = params[:powerfwd]
+    @team.smallfwd = params[:sf]
+    @team.powerfwd = params[:pf]
     @team.center = params[:center]
     
   end
