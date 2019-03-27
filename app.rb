@@ -13,6 +13,7 @@ class App < Sinatra::Base
     @team.team_name = params[:shooting]
     @team.team_name = params[:smallfwd]
     @team.team_name = params[:powerfwd]
+    
     erb :"team" 
   end
 
