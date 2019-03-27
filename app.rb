@@ -4,6 +4,11 @@ class App < Sinatra::Base
   get '/newteam' do
     erb :"newteam"
   end
+  
+  get '/newteam' do
+    
+    erb :"team"
+  end 
 
   post '/team' do
     @team = Team.new 
@@ -15,7 +20,7 @@ class App < Sinatra::Base
     @team.powerfwd = params[:pf]
     @team.center = params[:c]
     @team.save
-    
+    redirect "team"
   end
 
 end
